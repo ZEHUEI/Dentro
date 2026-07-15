@@ -1,4 +1,4 @@
-# ClearHandover
+# Dentro
 
 AI-powered vehicle condition scanning for car rental, car-sharing, and used-car dealers. Upload photos at pickup and return — get an objective, timestamped damage report in seconds.
 
