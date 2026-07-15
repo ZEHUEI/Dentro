@@ -5,8 +5,8 @@ AI-powered vehicle condition scanning for car rental, car-sharing, and used-car 
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Model-yellow?logo=huggingface)](https://huggingface.co/YOUR_USERNAME/ClearHandover)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-React-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-React-F7DF1E?logo=javascript&logoColor=black)](https://www.javascript.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-Express%20%2B%20Middleware-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-00FFFF?logo=yolo&logoColor=black)](https://github.com/ultralytics/ultralytics)
 [![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?logo=opencv&logoColor=white)](https://opencv.org/)
 [![Firebase](https://img.shields.io/badge/Firebase-Backend-FFCA28?logo=firebase&logoColor=black)](https://firebase.google.com/)
@@ -33,8 +33,8 @@ Damage disputes at vehicle handover cost rental companies and dealers real money
 
 | Layer | Tech |
 |---|---|
-| Frontend | React, TypeScript |
-| Backend | Node.js, Express |
+| Frontend | React, JavaScript |
+| Backend | Node.js, Express, custom middleware |
 | AI/CV | YOLOv8, OpenCV, TensorFlow |
 | Data | Firebase / Firestore |
 | Infra | Docker, GCP Cloud Run |
