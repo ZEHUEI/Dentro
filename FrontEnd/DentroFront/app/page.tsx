@@ -2,10 +2,32 @@ import Link from "next/link";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-const reportRows = [
-  ["Left front door", "Scratch detected", "0.94", "attention"],
-  ["Front bumper", "No new damage", "0.99", "clear"],
-  ["Rear quarter panel", "No new damage", "0.98", "clear"],
+interface ReportRow {
+  area: string;
+  result: string;
+  confidence: string;
+  state: "attention" | "clear";
+}
+
+const reportRows: ReportRow[] = [
+  {
+    area: "Left front door",
+    result: "Scratch detected",
+    confidence: "0.94",
+    state: "attention",
+  },
+  {
+    area: "Front bumper",
+    result: "No new damage",
+    confidence: "0.99",
+    state: "clear",
+  },
+  {
+    area: "Rear quarter panel",
+    result: "No new damage",
+    confidence: "0.98",
+    state: "clear",
+  },
 ];
 
 export default function Home() {
@@ -31,8 +53,8 @@ export default function Home() {
             know your <em className="font-serif font-normal">fleet.</em>
           </h1>
           <p className="mx-auto max-w-[560px] text-base leading-[1.5] tracking-[-.015em] text-[#b5b3ae] md:text-lg">
-            Dentro turns the photos you already take into clear, objective vehicle
-            condition reports—before disputes begin.
+            Dentro turns the photos you already take into clear, objective
+            vehicle condition reports—before disputes begin.
           </p>
           <div className="mt-8 flex items-center justify-center gap-[18px] md:gap-[25px]">
             <Link
@@ -56,7 +78,9 @@ export default function Home() {
           <div className="flex h-[575px] overflow-hidden rounded-[11px] border border-[#3a3a38] bg-[#202020] shadow-[0_30px_100px_#0008,0_0_0_1px_#ffffff06_inset] md:h-[610px] md:rounded-2xl">
             <aside className="hidden w-[228px] shrink-0 flex-col border-r border-[#292929] bg-[#1a1a1a] p-3 md:flex">
               <Link className="px-[7px] pb-[15px]" href="/">
-                <span className="align-[-2px] text-[25px] text-[#e4ff67]">◒</span>
+                <span className="align-[-2px] text-[25px] text-[#e4ff67]">
+                  ◒
+                </span>
               </Link>
               <button className="rounded-[7px] border border-[#363635] bg-[#272726] p-2.5 text-left text-xs text-[#ededeb]">
                 <b className="mr-[7px] text-base font-normal">＋</b> New
@@ -116,7 +140,8 @@ export default function Home() {
                   </span>
                   <div>
                     <p className="mt-0.5 mb-[7px] text-sm tracking-[-.015em] md:text-base">
-                      Review the return inspection for <b>2024 Tesla Model 3</b>.
+                      Review the return inspection for <b>2024 Tesla Model 3</b>
+                      .
                     </p>
                     <small className="text-[11px] text-[#8d8b85]">
                       12 images analysed · July 16, 2026 · 10:42 AM
@@ -129,29 +154,29 @@ export default function Home() {
                     <div>
                       <b className="text-sm">Inspection summary</b>
                       <p className="mb-0 mt-[5px] text-xs text-[#aaa8a2]">
-                        1 change identified since the previous verified condition
-                        record.
+                        1 change identified since the previous verified
+                        condition record.
                       </p>
                     </div>
                   </div>
                   <div>
-                    {reportRows.map(([area, result, confidence, state]) => (
+                    {reportRows.map((row) => (
                       <div
                         className="grid grid-cols-[1fr_.9fr] items-center gap-2 border-b border-[#353533] px-[13px] py-[13px] text-[11px] text-[#b2b0aa] md:grid-cols-[1.25fr_1.2fr_.65fr] md:px-[19px]"
-                        key={area}
+                        key={row.area}
                       >
-                        <span>{area}</span>
+                        <span>{row.area}</span>
                         <b
                           className={
-                            state === "attention"
+                            row.state === "attention"
                               ? "font-medium text-[#f1d7a2] before:mr-[6px] before:inline-block before:h-[5px] before:w-[5px] before:rounded-full before:bg-[#e0b762] before:align-[1px]"
                               : "font-medium text-[#c6d7bd] before:mr-[6px] before:inline-block before:h-[5px] before:w-[5px] before:rounded-full before:bg-[#8db378] before:align-[1px]"
                           }
                         >
-                          {result}
+                          {row.result}
                         </b>
                         <small className="hidden text-right text-[10px] text-[#85837d] md:block">
-                          {confidence} confidence
+                          {row.confidence} confidence
                         </small>
                       </div>
                     ))}
@@ -191,9 +216,15 @@ export default function Home() {
             <em className="font-serif font-normal">More confidence.</em>
           </h2>
           <div className="flex flex-wrap gap-[19px] border-t border-[#343432] pt-[15px] text-[13px] text-[#a9a7a2] md:gap-11">
-            <Link className="hover:text-[#f1f0ed] transition" href="/solutions">For rentals</Link>
-            <Link className="hover:text-[#f1f0ed] transition" href="/solutions">For fleets</Link>
-            <Link className="hover:text-[#f1f0ed] transition" href="/solutions">For dealers</Link>
+            <Link className="hover:text-[#f1f0ed] transition" href="/solutions">
+              For rentals
+            </Link>
+            <Link className="hover:text-[#f1f0ed] transition" href="/solutions">
+              For fleets
+            </Link>
+            <Link className="hover:text-[#f1f0ed] transition" href="/solutions">
+              For dealers
+            </Link>
           </div>
         </section>
       </div>
