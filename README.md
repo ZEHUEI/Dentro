@@ -45,7 +45,7 @@ Damage disputes at vehicle handover cost rental companies and dealers real money
 ```bash
 # clone the repo
 git clone https://github.com/YOUR_USERNAME/ClearHandover.git
-cd Dentro
+cd ClearHandover
 
 # install dependencies
 npm install

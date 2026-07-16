@@ -1,0 +1,196 @@
+# Dentro Project Rules
+
+## Product Identity
+
+This project is Dentro.
+
+Dentro is an AI-powered vehicle condition scanning platform for:
+
+- car rental companies
+- car-sharing companies
+- used-car dealers
+- fleet operators
+
+The purpose:
+Users upload vehicle photos during pickup/return.
+AI detects:
+
+- scratches
+- dents
+- panel damage
+- misalignment
+
+The system generates:
+
+- objective damage reports
+- confidence scores
+- timestamped inspection records
+- before/after comparisons
+
+Do NOT treat this as a generic web application.
+
+---
+
+# Brand Personality
+
+Dentro should feel like:
+
+- automotive technology
+- enterprise inspection software
+- AI computer vision platform
+- modern fleet management system
+
+Design inspiration:
+
+- Tesla service technology
+- NVIDIA AI enterprise products
+- Palantir data platforms
+- automotive diagnostic tools
+
+Avoid:
+
+- generic startup landing pages
+- cryptocurrency style UI
+- excessive gradients
+- childish illustrations
+- generic SaaS templates
+- random card grids
+
+---
+
+# Visual Design Direction
+
+Preferred:
+
+Theme:
+
+- dark professional interface
+- automotive/engineering aesthetic
+- high contrast
+- clean typography
+
+UI elements:
+
+- vehicle inspection panels
+- image comparison views
+- detection overlays
+- confidence indicators
+- damage reports
+- analytics dashboards
+- timeline views
+
+Use:
+
+- subtle animations
+- technical visualizations
+- realistic automotive terminology
+
+---
+
+# Frontend Stack
+
+Frontend:
+
+- React
+- JavaScript
+- Node.js ecosystem
+
+Follow existing project structure.
+
+Do not introduce new frameworks without approval.
+
+---
+
+# AI Features To Represent
+
+The UI should communicate:
+
+Computer Vision Pipeline:
+
+Vehicle Image
+↓
+Image Processing
+↓
+YOLOv8 Detection
+↓
+Damage Classification
+↓
+Condition Report
+
+Detected defects:
+
+- scratches
+- dents
+- panel misalignment
+
+---
+
+# User Personas
+
+Design for:
+
+## Rental Companies
+
+Needs:
+
+- fast vehicle handover
+- reduce disputes
+- fleet overview
+
+## Used Car Dealers
+
+Needs:
+
+- inspection reports
+- vehicle valuation
+- customer trust
+
+## Customers
+
+Needs:
+
+- simple photo upload
+- transparent damage records
+
+---
+
+# Component Guidelines
+
+Prefer components like:
+
+- VehicleScanner
+- DamageDetectionViewer
+- InspectionReport
+- VehicleComparison
+- ConfidenceScore
+- DefectTimeline
+- UploadWorkflow
+
+Avoid meaningless components like:
+
+- FeatureCard
+- ModernCard
+- GradientSection
+
+unless they have a clear purpose.
+
+---
+
+# Before Changing UI
+
+Before modifying files:
+
+1. Analyze existing design.
+2. Explain current problems.
+3. Propose a new design direction.
+4. List files to modify.
+
+---
+
+# Coding Rules
+
+- Keep existing functionality.
+- Make small incremental changes.
+- Do not remove working AI/API integration.
+- Reuse existing components.
+- Maintain clean React code.
