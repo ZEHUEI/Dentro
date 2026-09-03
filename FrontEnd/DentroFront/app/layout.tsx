@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Dentro | Vehicle condition intelligence",
   description: "AI-powered vehicle inspection and condition reporting.",
+  icons: {
+    icon: "./dentro-favicon.ico",
+  },
 };
 
 export default function RootLayout({
